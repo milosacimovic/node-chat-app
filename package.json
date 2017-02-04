@@ -1,0 +1,14 @@
+{
+  "name": "node-chat-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Milos Acimovic",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
