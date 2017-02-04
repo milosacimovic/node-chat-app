@@ -5,3 +5,12 @@ html
     meta(charset="utf-8")
   body
     p Welcome to the Chat App
+    script(src="/socket.io/socket.io.js")
+    script
+      |var socket = io();
+      |socket.on('connect', () => {
+      |  console.log('Connected to server.')
+      |});
+      |socket.on('disconnect', () => {
+      | console.log('Disconnected from server.');
+      |});

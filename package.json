@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "",
+    "start": "node server/server.js"
   },
   "author": "Milos Acimovic",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.1"
+    "express": "^4.14.1",
+    "socket.io": "^1.7.2"
   }
 }
