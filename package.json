@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "",
+    "test": "mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec 'npm test'",
     "start": "node server/server.js"
   },
   "author": "Milos Acimovic",
@@ -12,5 +13,9 @@
   "dependencies": {
     "express": "^4.14.1",
     "socket.io": "^1.7.2"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.2.0"
   }
 }
