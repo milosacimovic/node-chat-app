@@ -19,8 +19,25 @@ html
           button Send
         button#send-location Send location
 
+    script#message-template(type="text/template")
+      li.message
+        .message__title
+          h4 {{from}}
+          span {{createdAt}}
+        .message__body
+          p {{text}}
+
+    script#location-message-template(type="text/template")
+      li.message
+        .message__title
+          h4 {{from}}
+          span {{createdAt}}
+        .message__body
+          p
+            a(href="{{url}}" target="_blank") My current location
 
     script(src="/socket.io/socket.io.js")
     script(src="/js/libs/jquery.min.js")
     script(src="/js/libs/moment.js")
+    script(src="/js/libs/mustache.min.js")
     script(src="/js/index.js")
